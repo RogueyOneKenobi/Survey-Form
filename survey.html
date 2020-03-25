@@ -1,0 +1,94 @@
+<style>
+
+h1, p {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#description {
+    text-align: center;
+}
+
+#form {
+    background-color: #8f0202;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: auto;
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 5px solid #8f0249;
+}
+
+body {
+    background-color: #8f4902;
+    color: #ffffff;
+}
+
+header {
+    border: 5px solid #8f0249;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    background-color: #8f0202;
+}
+
+</style>
+
+<html>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header><br>
+    <body>
+            <div id="form">
+            <form id="survey-form">
+                <div class="question"><label for="name" id="name-label"><input id="name" type="text" placeholder="Name" required></label></div><br>
+                <div class="question"><label for="email" id="email-label"><input id="email" type="email" placeholder="Email Address" required></label></div><br>
+                <div class="question"><label for="number" id="number-label"><input id="number" type="number" placeholder="Age (Optional)" min="5" max="125"></label></div><br>
+                <div class="question"><label for="dropdown" id="dropdown-label">Which option best describes your current role?</label><br>
+                    <select id="job" name="job">
+                        <option value="student">Student</option>
+                        <option value="ft-job">Full-Time Job</option>
+                        <option value="ft-learn">Full-Time Learner</option>
+                        <option value="do-not-say">Prefer Not to Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div><br>
+                <div class="question"><label for="radio" id="radio-label">Would you recommend freeCodeCamp to a friend?</label><br>
+                    <input id="definitely" type="radio" name="recommend">Definitely</input><br>
+                    <input id="maybe" type="radio" name="recommend">Maybe</input><br>
+                    <input id="not-sure" type="radio" name="recommend">Not sure</input>
+                    </label>
+                </div><br>
+                <div class="question"><label for="dropdown2" id="dropdown-label-2">What is your favorite feature of freeCodeCamp?</label><br>
+                    <select id="feature" name="feature">
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open Source</option>
+                    </select>
+                </div><br>
+                <div class="question"><label for="checkbox" id="checkbox-label">What would you like to see improved? (Check all that apply)</label><br>
+                    <input id="fe-projects" type="checkbox">Front-end Projects</input><br>
+                    <input id="be-projects" type="checkbox">Back-end Projects</input><br>
+                    <input id="data-vis" type="checkbox">Data Visualisation</input><br>
+                    <input id="challenges" type="checkbox">Challenges</input><br>
+                    <input id="os-community" type="checkbox">Open Source Community</input><br>
+                    <input id="gitter-help" type="checkbox">Gitter Help Rooms</input><br>
+                    <input id="videos" type="checkbox">Videos</input><br>
+                    <input id="city-meetups" type="checkbox">City Meetups</input><br>
+                    <input id="wiki" type="checkbox">Wiki</input><br>
+                    <input id="forum" type="checkbox">Forum</input><br>
+                    <input id="courses" type="checkbox">Additional Courses</input>
+                </div><br>
+                <div class="question"><label for="textarea" id="textarea-label">Any comments or suggestions?</label><br>
+                    <input id="comments" type="text"></input>
+                </div><br>
+                <div class="question"><label for="submit" id="submit-label"></label>
+                        <input id="submit" type="button" value="Submit"></input></div>
+            </form>
+        </div>
+    </body>
+</html>
